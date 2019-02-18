@@ -40,6 +40,12 @@ h2 {
     width: 1024px;
   }
 }
+
+/* styling for home page*/
+#home_text_container_1 {
+  background-color: #8FD9F4;
+}
+
 /*  Styling for about us page*/
 #text_container1 {
   background-color: #90F49B;
