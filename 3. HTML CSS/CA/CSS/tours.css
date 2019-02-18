@@ -1,0 +1,78 @@
+@import "main.css";
+
+.tourstitle {
+  grid-column: 1/3;
+  grid-row: 2;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+}
+.content {
+  height: auto;
+  grid-column: 1/3;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card_container {
+  margin-bottom: 10%;
+}
+
+@media only screen and (min-width: 600px) {
+  .tourstitle {
+    grid-column: 1/3;
+    grid-row: 2;
+    height: 5vh;
+    margin-top: 5vh;
+    margin-left: 1%;
+    font-size: 2em;
+  }
+  .content {
+    height: 80vh;
+    grid-column: 1/3;
+    grid-row: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+/* CARD STYLE */
+
+.tourcard {
+  margin: 0 auto;
+  width: 40%;
+  height: 30vh;
+  border: black solid 1px;
+  position: relative;
+}
+.tourcard_img {
+  width: 100%;
+  height: 40%;
+}
+.tourimage {
+  width: 100%;
+  height: 100%;
+}
+.tourcard_title {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.87);
+  letter-spacing: 2.5px;
+  width: 80%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 5%;
+  font-size: 0.7em;
+}
+.tourcard_text {
+  width: 100%;
+  height: 55%;
+}

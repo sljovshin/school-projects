@@ -1,0 +1,143 @@
+@font-face {
+  font-family: serif-vogue;
+  src: url(Vogue.ttf);
+}
+
+@font-face {
+  font-family: serif-vogue;
+  src: url(Vogue.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: sanserif-caviar;
+  src: url(CaviarDreams.ttf);
+}
+body {
+    background-color: rgba(204, 188, 136, 1);
+}
+.header {
+    padding-top:50px;
+    padding-bottom: 30px;
+    border-bottom: 5px solid black;
+    background-color: rgba(204, 188, 136, 1);
+}
+.header h1 {
+  text-align: center;
+  text-transform: topcase;
+  font-size: 58pt;
+  font-family: serif-vogue;
+}
+.main {
+    width: 95%;
+    border: 0px;
+    margin: auto;
+
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    float: left;
+    background-color: rgba(204, 188, 136, 1);
+}
+.sidebar-images img {
+  width: 95%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.content-wrapper {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    background-color: #FFEBC5;
+    font-family: helvetica;
+    text-align: justify;
+}
+.top {
+    display: flex;
+    flex-direction: row;
+}
+.bot {
+    display: flex;
+    flex-direction: row;
+}
+.content-text {
+  margin: auto;
+  width: 95%;
+}
+#infobox {
+    background-color: #FFEBC5;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+#infotext {
+  font-family: sanserif-caviar;
+  text-align: center;
+  width: 80%;
+}
+
+#topleft {
+    display: block;
+    left: 0px;
+    width: 45%;
+    padding: 20px;
+    align-content: center;
+
+}
+
+#topright {
+    display: block;
+    right: 0px;
+    width: 45%;
+    padding: 20px;
+    border-left: 1px solid black;
+}
+
+#botleft {
+    display: block;
+    left: 0px;
+    width: 45%;
+    padding: 20px;
+}
+#botright {
+    display: block;
+    right: 0px;
+    width: 45%;
+    padding: 20px;
+    border-left: 1px solid black;
+}
+#top-left-image {
+  width: 100%;
+}
+
+#bot-right-image {
+  width: 100%;
+}
+footer {
+    text-align: center;
+}
+
+
+h2 {
+  font-family: serif-vogue;
+  font-weight: bold;
+}
+
+blockquote {
+  text-align: center;
+  font-family: sanserif-caviar;
+  padding: 30px;
+}
+
+figcaption {
+  padding-top: 5px;
+  text-indent: 20px;
+  font-family: sanserif-caviar;
+}
+footer {
+  background-color: rgba(204, 188, 136, 1);
+}

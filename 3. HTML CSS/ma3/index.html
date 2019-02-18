@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Red Pepper pizza Order Form.">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href="CSS/reset.css">
+      <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="CSS/animations.css">
+    <title>Order form</title>
+  </head>
+  <body>
+    <header>
+      <img src="IMG/logo_nobg.png" alt="redpepperpizza_logo" height="100px">
+    </header>
+    <main class="main-wrapper">
+      <form class="pizzaform" action="index.html" method="get">
+      <section id=form-header>
+        <h2>Create your order!</h2>
+        <nav>
+          <p>Choose your Pizza - Add extra toppings - Choose a bevrage - Give us a delivery address</p>
+        </nav>
+      </section>
+      <section id="pizza-selector">
+        <div id="pizzabox-wrap">
+             <div class="pizza-block">
+                  <img class="pizzabox" src="IMG/pizzapepperoni.jpg" alt="Menu picture of pizza pepperoni" width="200"
+                  height="200">
+                   <div class="thumb_content">
+                     <input type="checkbox" name="pepperoni" id="info1"/>
+                     <label for="info1">
+                       <ul>
+                         <h4>Click to select!</h4>
+                         <li>Pepperoni</li>
+                         <li>Olive oil</li>
+                         <li>Mozzerella Cheese</li>
+                         <li>Tomato sauce</li>
+                       </ul>
+                     </label>
+                   </div>
+             </div>
+             <div class="pizza-block">
+                  <img class="pizzabox" src="IMG/pizzahawaii.jpg" alt="Menu picture of pizza hawaii" width="200"
+                  height="200">
+                   <div class="thumb_content">
+                     <input type="checkbox" name="hawaii" id="info2"/>
+                     <label for="info2">
+                       <ul>
+                         <h4>Click to select!</h4>
+                         <li>Ham</li>
+                         <li>Pineapple</li>
+                         <li>Mozzerella Cheese</li>
+                         <li>Tomato sauce</li>
+                       </ul>
+                     </label>
+                   </div>
+             </div>
+             <div class="pizza-block">
+                  <img class="pizzabox" src="IMG/redpepperspecial.jpg" alt="Menu pircure of Red Pepper Special" width="200"
+                  height="200">
+                   <div class="thumb_content">
+                     <input type="checkbox" name="special" id="info3"/>
+                     <label for="info3">
+                       <ul>
+                         <h4>Click to select!</h4>
+                         <li>Pepperoni</li>
+                         <li>Red peppers</li>
+                         <li>Mozzerella Cheese</li>
+                         <li>Tomato sauce</li>
+                       </ul>
+                     </label>
+                   </div>
+             </div>
+        </div>
+      </section>
+      <section id="extra-selector">
+        <div class="extra-section-title">
+          <h3>Add some extras:</h3>
+        </div>
+        <div div id="extra-section-wrapper">
+          <div class="extra-section">
+            <ul>
+              <li><input type="checkbox" name="Pepperoni"> Pepperoni</li>
+              <li><input type="checkbox" name="Meatballs"> Meatballs</li>
+              <li><input type="checkbox" name="Groundmeat"> Ground meat</li>
+            </ul>
+          </div>
+          <div class="extra-section">
+            <ul>
+              <li><input type="checkbox" name="Pineapple"> Pineapple</li>
+              <li><input type="checkbox" name="Olives"> Olives</li>
+              <li><input type="checkbox" name="Redpeppers"> Red peppers</li>
+            </ul>
+          </div>
+          <div class="extra-section">
+            <ul>
+              <li><input type="checkbox" name="Garliddressing"> Garlic dressing</li>
+              <li><input type="checkbox" name="Aioli"> Aioli</li>
+              <li><input type="checkbox" name="Chipotlemayo"> Chipotle Mayo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="bevrage-selector">
+        <h3>Add a bevrage to your order:</h3>
+        <div id="bevrage-section-wrapper">
+          <div class="bevrage-section">
+            <ul>
+              <li><input type="checkbox" name="cocacola"> Coca Cola</li>
+            </ul>
+          </div>
+          <div class="bevrage-section">
+            <ul>
+              <li><input type="checkbox" name="fanta"> Fanta</li>
+            </ul>
+          </div>
+          <div class="bevrage-section">
+            <ul>
+              <li><input type="checkbox" name="sprite"> Sprite</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="address-form">
+        <div id="address-form-title">
+          <h3>Where should we deliver the food?</h3>
+        </div>
+        <div id="address-form-wrapper">
+          <input id="streetinput" type="text" name="Street" placeholder="Street">
+          <div id="cityzip-container">
+            <input class="cityzip" type="text" name="City" placeholder="City">
+            <input class="cityzip" type="text" name="ZIP" placeholder="Zip Code">
+          </div>
+        </div>
+      </section>
+      <section id="button-container">
+        <button type="submit" value="submit">Place Order!</button>
+      </section>
+      </form>
+    </main>
+    <footer>
+      <div class="footercontent">
+        <ul>
+          <h5>Visit us:</h5>
+          <p>Red Pepper Pizza AS</p>
+          <p>Somestreet 45</p>
+          <p>1010 BIGCITY</p>
+        </ul>
+      </div>
+      <div class="footercontent">
+        <ul>
+          <h4>Contact us:</h4>
+          <p>Phone:+47 123 45 678 </p>
+          <p>email: contact@rpp.com</p>
+        </ul>
+      </div>
+      <div class="footercontent">
+        <p>Created by Sondre Ljovshin</p>
+      </div>
+    </footer>
+  </body>
+</html>

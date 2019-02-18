@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Nice Cream</title>
+  </head>
+  <body>
+    <!--GRID WRAPPER -->
+    <div class="wrapper">
+      <!-- Header -->
+      <header>
+        <div class="bg-img"></div>
+        <ul>
+          <h1>NICE</h1>
+          <h1>CREAM</h1>
+        </ul>
+      </header>
+      <!-- Main section -->
+      <main>
+        <!-- GRID ROW 1 -->
+        <section class="row">
+          <!-- Section a - NAVBAR -->
+          <div id="section-a" class="navbar sidebar column">
+            <nav>
+              <ul id="linkmenu">
+                <li>Home</li>
+                <li>Menu</li>
+                <li><a id="open-modal" href="#">Make your Own</a></li>
+              </ul>
+             </nav>
+          </div>
+        <!-- Section b - image -->
+          <div id="section-b" class="column imgbox">
+            <img src="IMG\img-1.jpg" alt="">
+          </div>
+          <!-- Section c - text -->
+          <div id="section-c" class="column textbox">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptatibus eligendi qui veniam corrupti fuga, placeat dolor. Laudantium, quia, vitae!</p>
+          </div>
+        </section>
+        <!-- GRID ROW 2 -->
+        <section class="row">
+          <!-- Section a - whiespace div -->
+          <div class="sidebar column"></div>
+          <!-- Section d - text -->
+          <div id="section-d" class="column textbox">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum adipisci quidem error corporis vero blanditiis animi. Voluptas eius saepe amet.</p>
+          </div>
+          <!-- Section e - image -->
+          <div id="section-e" class="column imgbox">
+            <img src="IMG\img-2.jpg" alt="">
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer>
+    		<h3>Footer</h3>
+    		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro. Doloribus vitae non dolores modi dolorum commodi perspiciatis dicta nostrum minus esse, totam officia, quibusdam amet quas tempora? Voluptatibus, esse.</p>
+    	</footer>
+    </div>
+    <!-- Modal section -->
+    <div id="modal-bg" style="display:none;">
+      <div id="modal-content">
+        <a id="closebt" href="#">+</a>
+        <h2 id="modaltitle">Make your own Ice Cream</h2>
+          <form class="makeyourown" method="GET">
+              <input type="text" name="base" placeholder="Add base - milk, soy, etc..">
+              <input type="text" name="flawor1" placeholder="Add flawor one">
+              <input type="text" name="flawor2" placeholder="Add flawor two">
+              <input type="text" name="flawor3" placeholder="Add flawor three">
+              <input type="text" name="flawor4" placeholder="Add flawor four">
+              <input type="text" name="amount" placeholder="How much do you want? In deciliter">
+              <button id="sbutton" class="button" type="submit" name="Submit"> Submit</button>
+              <button id="cbutton" class="button"> Cancle</button>
+          </form>
+      </div>
+    </div>
+  </body>
+  <script src="JS/script.js"></script>
+</html>
