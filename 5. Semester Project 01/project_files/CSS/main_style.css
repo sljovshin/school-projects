@@ -42,8 +42,56 @@ h2 {
 }
 
 /* styling for home page*/
+.home_wrapper {
+  margin-bottom: 100px;
+}
 #home_text_container_1 {
   background-color: #8FD9F4;
+}
+#home_text_container_2 {
+  background-color: #90F49B;
+}
+#home_text_container_3 {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 90%;
+  font-size: 1.3em;
+  font-style: italic;
+  text-align: center;
+}
+#qoute_name {
+  position: absolute;
+  right: 15px;
+  bottom: -35px;
+}
+
+#home_text_container_4 {
+  background-color: #FEA5CE;
+  text-align: center;
+}
+
+#home_text_container_4 > img {
+  width: 94%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .home_wrapper {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  #home_text_container_3 {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home_wrapper {
+    width: 1024px;
+    display: flex;
+    }
 }
 
 /*  Styling for about us page*/
