@@ -236,7 +236,6 @@ h2 {
 
 #visit_text_container1 {
   background-color: #FBA5CD;
-
 }
 #visit_text_container2 {
   background-color: #96D8F1;
@@ -244,9 +243,12 @@ h2 {
 #visit_text_container3 {
   background-color: #90F49B;
 }
-.visit_text_container {
-  width: 30%;
+#contact_container {
+  background-color: #FEFAA3;
 }
+.visit_wrapper {
+  text-align: center;
+  }
 .list_container {
   display: flex;
   margin-bottom: 10px;
@@ -258,17 +260,43 @@ h2 {
   padding-left: 0px;
   margin-left: 10px;
 }
+.contactus {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 94%;
+  padding: 15px;
+}
+.contactus input {
+  margin-bottom: 15px;
+}
+.contactus textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+.contactus button {
+  margin-top: 15px;
+}
 
 @media screen and (min-width: 768px) {
   .visit_wrapper {
     width: 768px;
     margin: 0 auto;
+  }
+  .visit_text_container {
+    width: 30%;
+  }
+  #visit_upper_wrapper {
     display: flex;
   }
+
 }
 @media screen and (min-width: 1024px) {
   .visit_wrapper {
     width: 1024px;
+  }
+  #visit_lower_wrapper {
+    display: flex;
   }
 }
 
