@@ -1,0 +1,224 @@
+/*   General styling for all pages*/
+h2 {
+  margin-left: 3%;
+  margin-bottom: 15px;
+}
+.content {
+  text-align: center;
+}
+.containerform {
+  width: 94%;
+  border: white solid 1px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.containerform > h3 {
+  font-size: 1em;
+  margin: 10px;
+}
+.containerform > p {
+  font-size: 0.9em;
+  margin: 10px;
+}
+.imgform {
+  width: 94%;
+  border: white solid 1px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .title_container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .title_container {
+    width: 1024px;
+  }
+}
+/*  Styling for about us page*/
+#text_container1 {
+  background-color: #90F49B;
+}
+#text_container2 {
+  background-color: #8FD9F4;
+}
+#text_container3 {
+  background-color: #FEA5CE;
+}
+#about_bottom {
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 768px) {
+  .content {
+    width: 768px;
+    margin: 0 auto;
+  }
+  #about_bottom {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content {
+    width: 1024px;
+  }
+}
+
+/*  Styling for exhibitions page*/
+.exhibition_badge {
+  position: relative;
+  width: 96%;
+  height: 30vh;
+  max-height: 300px;
+  text-align: center;
+  }
+.exhibition_badge > h3 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-size: 2.2em;
+  font-weight: bolder;
+}
+.badgeimage {
+  width: 96%;
+  position: absolute;
+  bottom: 10px;
+  left: 2%;
+}
+.exhibition_wrapper {
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 425px) {
+  .exhibition_badge > h3 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .badgeimage {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .exhibition_wrapper {
+    width: 768px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .exhibition_section {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .exhibition_wrapper {
+    width: 1024px;
+  }
+}
+#exhibition_badge_1 {
+  background-color: #FEFAA3;
+}
+#exhibition_badge_2 {
+  background-color: #96D8F1;
+}
+#exhibition_badge_3 {
+  background-color: #FBA5CD;
+}
+#exhibition_badge_4 {
+  background-color: #90F49B;
+}
+
+/*  Styling for evolution page !! not in use yet !!
+
+@media screen and (min-width: 1024px) {
+  #evo_bottom_content {
+    display: flex;
+  }
+  #evo_bottom_content img, div {
+    width: 50%;
+  }
+}
+*/
+
+
+/*  Styling for event page*/
+
+#event_text_container1 {
+  background-color: #96D8F1;
+}
+#event_text_container2 {
+  background-color: #FBA5CD;
+}
+#event_text_container3 {
+  background-color: #90F49B;
+}
+.event_section {
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 768px) {
+  .event_wrapper {
+    width: 768px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .event_section {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .event_wrapper {
+    width: 1024px;
+  }
+}
+
+/*  Styling for visit page*/
+
+#visit_text_container1 {
+  background-color: #FBA5CD;
+
+}
+#visit_text_container2 {
+  background-color: #96D8F1;
+}
+#visit_text_container3 {
+  background-color: #90F49B;
+}
+.visit_text_container {
+  width: 30%;
+}
+.list_container {
+  display: flex;
+  margin-bottom: 10px;
+}
+.list_container ul {
+  padding-left: 15px;
+}
+.list_container ul:first-child {
+  padding-left: 0px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .visit_wrapper {
+    width: 768px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .visit_wrapper {
+    width: 1024px;
+  }
+}
+
+
+
+
+/*  Styling for cosmology page*/
