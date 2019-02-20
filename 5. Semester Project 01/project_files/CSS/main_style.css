@@ -239,6 +239,8 @@ h2 {
 }
 #visit_text_container2 {
   background-color: #96D8F1;
+  margin-left: auto;
+  margin-right: auto;
 }
 #visit_text_container3 {
   background-color: #90F49B;
@@ -283,6 +285,10 @@ h2 {
   margin-top: 15px;
   width: 100%;
   height: 30px;
+  cursor: pointer;
+  border: solid 1px #ddd98d;
+  border-radius: 5px;
+  background-color: #ede797;
 }
 
 @media screen and (min-width: 768px) {
@@ -294,6 +300,7 @@ h2 {
     width: 30%;
   }
   #visit_upper_wrapper {
+    margin-bottom: 10px;
     display: flex;
   }
   .contactus button {
@@ -303,6 +310,23 @@ h2 {
 @media screen and (min-width: 1024px) {
   .visit_wrapper {
     width: 1024px;
+  }
+  #visit_text_container1 {
+  margin-left: 10px;
+  }
+  #visit_text_container3 {
+    margin-right: 10px;
+  }
+  .map {
+    margin-left: 0;
+  }
+  #map {
+    text-align: left;
+    width: 90%;
+    margin-left: 10px;
+  }
+  #contact_container {
+    margin-right: 10px;
   }
   #visit_lower_wrapper {
     display: flex;
