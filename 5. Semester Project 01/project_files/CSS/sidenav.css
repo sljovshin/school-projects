@@ -4,7 +4,7 @@
   position: fixed;
   top: 60px;
   right: 0;
-  background-color: #111;
+  background-color: lightgrey;
   overflow-x: hidden;
   padding-top: 20px;
   transition: 0.5s;
