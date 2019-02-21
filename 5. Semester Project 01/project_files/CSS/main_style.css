@@ -127,7 +127,7 @@ h2 {
 .exhibition_badge {
   position: relative;
   width: 96%;
-  height: 30vh;
+  height: 35vh;
   max-height: 300px;
   text-align: center;
   }
@@ -147,6 +147,9 @@ h2 {
   margin-bottom: 100px;
 }
 @media screen and (min-width: 425px) {
+  .exhibition_badge {
+    min-height: 250px;
+  }
   .exhibition_badge > h3 {
     position: absolute;
     margin-left: auto;
@@ -155,7 +158,7 @@ h2 {
     right: 0;
   }
   .badgeimage {
-    width: 360px;
+    width: 96%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
