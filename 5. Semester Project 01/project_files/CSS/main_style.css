@@ -139,6 +139,7 @@ h2 {
 }
 .badgeimage {
   width: 96%;
+  max-width: 475px;
   position: absolute;
   bottom: 10px;
   left: 2%;
@@ -196,17 +197,26 @@ h2 {
   background-color: #90F49B;
 }
 
-/*  Styling for evolution page !! not in use yet !!
-
-@media screen and (min-width: 1024px) {
+/*  Styling for evolution page !! not in use yet !! */
+.evo_content {
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .evo_content {
+    width: 768px;
+  }
   #evo_bottom_content {
     display: flex;
-  }
-  #evo_bottom_content img, div {
-    width: 50%;
+    
   }
 }
-*/
+@media screen and (min-width: 1024px) {
+  .evo_content {
+    width: 1024px;
+  }
+}
+
 
 
 /*  Styling for event page*/
