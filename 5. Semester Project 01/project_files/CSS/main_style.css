@@ -105,9 +105,6 @@ h2 {
 #text_container3 {
   background-color: #FEA5CE;
 }
-#about_bottom {
-  margin-bottom: 100px;
-}
 @media screen and (min-width: 768px) {
   .content {
     width: 768px;
@@ -207,8 +204,10 @@ h2 {
     width: 768px;
   }
   #evo_bottom_content {
+    margin: 0 auto;
+    width: 94%;
     display: flex;
-    
+
   }
 }
 @media screen and (min-width: 1024px) {
@@ -230,7 +229,7 @@ h2 {
 #event_text_container3 {
   background-color: #90F49B;
 }
-.event_section {
+.event_section2 {
   margin-bottom: 100px;
 }
 @media screen and (min-width: 768px) {
@@ -239,9 +238,12 @@ h2 {
     margin: 0 auto;
     display: flex;
   }
-  .event_section {
+  .event_section_1 {
     width: 50%;
   }
+  .event_section_2 {
+      width: 50%;
+    }
 }
 @media screen and (min-width: 1024px) {
   .event_wrapper {
