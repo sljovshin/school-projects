@@ -194,7 +194,7 @@ h2 {
   background-color: #90F49B;
 }
 
-/*  Styling for evolution page !! not in use yet !! */
+/*  Styling for evolution page  */
 .evo_content {
   text-align: center;
   margin: 0 auto;
@@ -205,14 +205,27 @@ h2 {
   }
   #evo_bottom_content {
     margin: 0 auto;
-    width: 94%;
+    width: 100%;
     display: flex;
 
+  }
+  .evo_bot_container {
+    width: 50%;
   }
 }
 @media screen and (min-width: 1024px) {
   .evo_content {
     width: 1024px;
+  }
+}
+
+/* Styling for evolution page */
+@media screen and (min-width: 768px) {
+  .bio_bottom_content {
+    display: flex;
+  }
+  .bio_content_container {
+    width: 50%;
   }
 }
 
