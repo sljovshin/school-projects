@@ -1,69 +1,59 @@
 html, body {
   margin: 0; padding: 0;
   font-family: arial;
+  width: 100%;
 }
-h1 {
+h1, h2 {
   text-align: center;
   margin-bottom: 30px;
 }
+
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
-/* Module assignment 1 part 5*/
-.login-container {
-  width: 70%;
-  background-color: lightblue;
-  margin: auto auto;
-  text-align: center;
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-.login-form {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
+
+section {
+  margin-bottom: 30px;
+  width: 90%;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+#login {
+ text-align: center;
+ background-color: lightblue;
 }
 input {
-  width: 70%;
-  height: 30px;
-  border: none;
+  display: block;
+  width: 60%;
   margin: 10px auto;
+  height: 30px;
   text-indent: 15px;
 }
 #bt {
-  text-align: center;
-  width: 70%;
-  height: 30px;
-  border: solid 1px grey;
-  background-color: lightblue;
-  margin: 10px auto;
+  border: solid 1px black;
+  width: 50%;
+  margin: 0 auto;
   cursor: pointer;
 }
-h3 {
-  margin: 0;
-  padding: 0;
-}
 #message {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
+  font-weight: bold;
 }
 .infobox {
-  border: solid black 1px;
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 30px;
-}
-/* Module assignment 1 part 6*/
-.displayArray-container {
-  width: 70%;
-  background-color: lightgreen;
-  margin: auto auto;
-  text-align: center;
-}
-h2 {
-  text-align: center;
+  border: solid 1px black;
 }
 
-ul {
-  text-align: left;
+#array {
+  background-color: lightgreen;
+  padding: 40px;
 }

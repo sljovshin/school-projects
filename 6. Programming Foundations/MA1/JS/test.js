@@ -2,7 +2,7 @@
 var submitted_userName = document.getElementById("un");
 var submitted_passWord = document.getElementById("pw");
 var signinbt = document.getElementById("bt");
-var countryUL = document.getElementById("country-list");
+var countryUL = document.getElementById("country_list");
 
 
 /* Module assignment 1 part 5 */
@@ -12,13 +12,13 @@ bt.addEventListener("click", login);
 
 function login() {
   if (submitted_userName.value != userName) {
-    document.getElementById("login-message").innerHTML = 'Your username is wrong';
+    document.getElementById("login_message").innerHTML = 'Your username is wrong';
   }
   else if (submitted_passWord.value != passWord) {
-    document.getElementById("login-message").innerHTML = 'Your password is wrong';
+    document.getElementById("login_message").innerHTML = 'Your password is wrong';
   }
   else {
-    document.getElementById("login-message").innerHTML = `Welcome ${userName}, enjoy your stay`;
+    document.getElementById("login_message").innerHTML = `Welcome ${userName}, enjoy your stay`;
   }
 }
 
