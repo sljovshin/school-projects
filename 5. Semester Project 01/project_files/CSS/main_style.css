@@ -1,3 +1,46 @@
+/* General styling for most pages*/
+h2 {
+  margin-left: 3%;
+  margin-bottom: 15px;
+}
+.content {
+  text-align: center;
+}
+.containerform {
+  width: 94%;
+  border: white solid 1px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.containerform > h3 {
+  font-size: 1.1em;
+  margin: 10px;
+}
+.containerform > p {
+  font-size: 1.1em;
+  margin: 10px;
+}
+.imgform {
+  width: 94%;
+  border: white solid 1px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .title_container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .title_container {
+    width: 1024px;
+  }
+}
+
 /* styling for home page*/
 .home_wrapper {
   margin-bottom: 100px;
@@ -156,15 +199,24 @@
   text-align: center;
   margin: 0 auto;
 }
+#evo_text_container1_dt {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .evo_content {
     width: 768px;
   }
   #evo_bottom_content {
     margin: 0 auto;
-    width: 100%;
+    margin-top: 40px;
     display: flex;
-
+  }
+  #evo_text_container1_dt {
+    display: block;
+    margin-bottom: 40px;
+  }
+  #evo_text_container1 {
+    display: none;
   }
   .evo_bot_container {
     width: 50%;
