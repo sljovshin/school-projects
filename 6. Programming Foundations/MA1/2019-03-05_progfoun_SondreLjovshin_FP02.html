@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="CSS/main.css"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Module Assignment 1</title>
+  <style>
+  html, body {
+  margin: 0; padding: 0;
+  font-family: arial;
+  width: 100%;
+}
+h1, h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+section {
+  margin-bottom: 30px;
+  width: 90%;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+#login {
+ text-align: center;
+ background-color: lightblue;
+}
+input {
+  display: block;
+  width: 60%;
+  margin: 10px auto;
+  height: 30px;
+  text-indent: 15px;
+}
+#bt {
+  border: solid 1px black;
+  width: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+#message {
+  font-weight: bold;
+}
+.infobox {
+  width: 70%;
+  margin: 0 auto;
+  border: solid 1px black;
+}
+
+#array {
+  background-color: lightgreen;
+  padding: 40px;
+}
+  </style>
+</head>
+<body>
+  <h1>Module Assignment 1</h1>
+  <main>
+    <section id="login">
+        <h2>Login form</h2>
+        <p>This is an exapmle if an  <u>if- else if - else</u> statment</p>
+        <form class="login_form">
+          <input type="text" name="userName" placeholder="enter username" id="un">
+          <input type="password" name="passWord" placeholder="enter password" id="pw">
+          <div id="bt">
+            <h3>Sign In</h3>
+          </div>
+        </form>
+        <div id="message"><p id="login_message">please log in</p></div>
+        <div class="infobox">
+          <p>These two are the correct combination</p>
+          <p>username: admin</p>
+          <p>password: password</p>
+        </div>
+    </section>
+    <!-- Module assignment 1 part 6 and 7 -->
+    <section id="array">
+      <h2>List of Countries</h2>
+      <p>This is an example of an <u>array</u> and the use of a <u>for-loop</u> to display all elements within the array</p>
+      <ul id="country_list"></ul>
+    </section>
+  </main>
+  <script>
+		  /*DOM Chache*/
+		var submitted_userName = document.getElementById("un");
+		var submitted_passWord = document.getElementById("pw");
+		var signinbt = document.getElementById("bt");
+		var countryUL = document.getElementById("country_list");
+
+
+		/* Module assignment 1 part 5 */
+		var userName = "admin";
+		var passWord = "password";
+		bt.addEventListener("click", login);
+
+		function login() {
+		  if (submitted_userName.value != userName) {
+			document.getElementById("login_message").innerHTML = 'Your username is wrong';
+			console.log("Your username is wrong");
+		  }
+		  else if (submitted_passWord.value != passWord) {
+			document.getElementById("login_message").innerHTML = 'Your password is wrong';
+			console.log("Your password is wrong");
+		  }
+		  else {
+			document.getElementById("login_message").innerHTML = `Welcome ${userName}, enjoy your stay`;
+			console.log(`Welcome ${userName}, enjoy your stay`);
+		  }
+		}
+
+		/* Module assignment 1 part 6 */
+		var countries = ["Norway","Sweden", "Denmark", "Finland", "Germany"];
+
+		/* Module assignment 1 part 7 */
+		displayArray();
+
+		function displayArray() {
+		  for (var i = 0; i < countries.length; i++) {
+			  countryUL.innerHTML = countryUL.innerHTML + `<li>${countries[i]}</li>`;
+			  console.log (countries[i]);
+		  }
+		}
+
+  </script>
+  <!-- <script src="JS/test.js"></script> -->
+</body>
+</html>
