@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Module Assignment 2</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // Class that contain the Bewrage
+    function Bewrage(name,ingredients,bewragesMade,updateBewragesMade) {
+      this.name = name;
+      this.ingredients = ingredients;
+      this.bewragesMade = bewragesMade;
+      this.updateBewragesMade = function () {
+        return ++this.bewragesMade;
+      };
+    }
+    // List of available bewrages
+    var bewrages = [
+      new Bewrage("Hot Chocolate", "Chocolate and Hot milk", 0),
+      new Bewrage("Coffee", "Coffeepowder and Hot water", 0),
+      new Bewrage("Tea", "Tea and Hot water", 0)
+    ]
+
+    // Brews the bewrage
+    function makeBewrage(a) {
+      // Lets Gus know what he chose
+      console.log("You have selected: " +bewrages[a-1].name + ", It will be ready in no time!");
+      // Tells Gus what is being put in the brew
+      console.log("Adding " + bewrages[a-1].ingredients+"!");
+      // lets Gus know the brewrage is ready
+      console.log("Your " +bewrages[a-1].name + " is ready to be enjoyed");
+      // Updates the bewragesMade on the Object selected by Gus
+      if (a == 0) {bewrages[a-1].updateBewragesMade();}
+      else if (a == 1) {bewrages[a-1].updateBewragesMade();}
+      else {bewrages[a-1].updateBewragesMade();}
+      // Tells Gus how many of that perticular brew he has made
+      console.log(bewrages[a-1].name + " has been made: " + bewrages[a-1].bewragesMade + " times!");
+    }
+
+      //Ask the user what they would like
+      var userSelection = prompt("What would you like? - 1 for Hot Chocolate, 2 for Coffee or 3 for Tea.");
+      // makes sure Gus selects something that can be made
+      if (userSelection <= 3 && userSelection >= 1) {
+        // calls the makeBewrage function and passes the input from Gus
+        makeBewrage(userSelection);
+        // Logs how to make something else
+        console.log("use makeBewrage(); with 1, 2 or 3 as argument to make something else");
+        }
+      // If Gus gives us wrong input he will be enlightend
+      else {
+        console.log("Thats not a valid choice");
+      }
+  </script>
+<!-- <script src="app.js" charset="utf-8"></script> -->
+</body>
+</html>
