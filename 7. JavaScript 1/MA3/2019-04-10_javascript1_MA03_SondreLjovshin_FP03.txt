@@ -1,0 +1,57 @@
+JavaScript MA03
+----------------
+Level 2
+
+1. In your own words, describe what JavaScript Code Style is.
+ I would describe JavaScript Code Style as how you write your code, considering naming conventions, use of whitespace and indentations.
+
+2. What is a Regular Expression?
+ Regular Expression is a string of characters that define a pattern used to search for spesific text in a string.
+
+3. What does the .random() method do? 
+ .random() is s method of the Math object, it will produce a number between 0 and 1.
+
+4. What does the .sort() method do?
+ .sort() is a method of the Array object, it will sort the elements of an array alphabetically.
+
+5. What does the .reverse() method do?
+ .reverse() is a method of the Array object, it will reverse the order of the elements in an array.
+
+6. List two examples of bad JavaScript code.
+ example one: using "=="
+    var a = "55";
+    var b = 55;
+    if(a == b){
+        //this statment will be true regardless of the type of the arguments, because it will mutate "a" tp the same type as "b".
+    }
+
+ example two: blockless statments (it makes the code obscure)
+    for(i = 0; i > 10; i++)
+       console.log(i); <- part will be ran 10 times
+
+    someFunc(); <- this will be ran once because its not a part of the for loop.
+
+7. What data types can a JSON object contain?
+ JSON can contain Objects, Arrays, Strings, Numbers, Booleans and Null.
+
+8. What is minifying JavaScript Code?
+ Minifying or minification is the process of removing unnecessary data from you code without affecting how the browser precesses it.
+ example:
+--------- normal, with comments ---------
+ //declaration
+    var someVariable;
+ //Value assignment
+    someVariable = 88;
+ //function that displays 
+    function logVariableToConsole(){
+        console.log(someVariable);
+    }
+ //Call function
+    logVariableToConsole();
+
+------------- Minified --------------
+var sv=88;function lvtc(){console.log(sv);}lvtc();
+
+
+9. What is a global variable?
+ A global variable is a variable that can be accessed and changed from any place in the code.

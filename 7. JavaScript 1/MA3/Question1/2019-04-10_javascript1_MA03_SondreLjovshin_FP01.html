@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - MA03 - Question 1</title>
+</head>
+<style>
+input {
+        display: block;
+        width: 500px;
+        height: 50px;
+        border: 1px grey solid;
+        background-color: white;
+        margin-bottom: 5px;
+        text-indent: 30px;
+        font-size: 1.5em;
+    }
+ button {
+        width: 500px;
+        height: 50px;
+        border: 1px grey solid;
+    }
+</style>
+<body>
+
+<!--Contact Form-->
+<form id="contactForm" method="GET" onsubmit="validateForm();">
+    <input type="text" id="firstName" class="namefield" placeholder="First name">
+    <input type="text" id="lastName" class="namefield" placeholder="Last name">
+    <input type="text" id="tlfNumber" placeholder="Telephone">
+    <input type="text" id="eMail" placeholder="E-mail">
+    <button type="submit" name="submit"> Submit </button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
