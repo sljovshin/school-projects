@@ -1,0 +1,101 @@
+/*-------------------------------------------------------
+    Start:   styling that affect all pages
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: lightgray;
+    height: 100px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: lightgoldenrodyellow;
+    height: calc(100vh - 201px);
+}
+
+footer {
+    background-color: lightgray;
+    height: 100px;
+}
+a {
+    color: black;
+    text-decoration: inherit;
+    font-size: calc(0.8em + 1vw);
+    font-weight: bold;
+    font-family: arial;
+}
+
+li {
+    display: inline;
+    margin: 0 calc(3px + 1vw);
+}
+/*
+    End:   styling that affect all pages
+-------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------
+    Start:   styling that affect index page
+*/
+#brandbanner {
+    position: relative;
+    background-image: url('/IMG/brandbannerimg.jpg');
+    height: calc(100vh - 101px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+#brandbanner img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
+
+/*
+    End:   styling that affect index page
+-------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------
+    Start:   styling that affect about page
+*/
+
+
+/*
+    End:   styling that affect about page
+-------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------
+    Start:   styling that affect contact page
+*/
+
+
+/*
+    End:   styling that affect contact page
+-------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------
+    Start:   styling that affect locate page
+*/
+
+
+/*
+    End:   styling that affect locate page
+-------------------------------------------------------*/
+
