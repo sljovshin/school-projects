@@ -1,0 +1,23 @@
+What is the DOM?
+Document object model, it defines the standard for accessing elements on the website.
+
+List three methods to manipulate the DOM.
+1. getElementById
+2. getElementsByClassName
+3. querySelector
+
+What is an asynchronous call?
+An asynchronous call is a function call that runs along side the rest of the program, mening it will not take control of the program from the caller. Normal functions would take control of the program and not deliver it back to the caller before its done.
+
+Briefly explain what the sources tab in Chromes Developers Tools does.
+It lists all sources the browser uses to display the website and it lets you inspect the sources aswell
+
+What is a JavaScript promise?
+
+
+What is an API?
+API is short for Application Programming Interface, its used to pass information in a controlled manner form a source to an application.
+
+What is a JavaScript Event?
+
+What is event bubbling?

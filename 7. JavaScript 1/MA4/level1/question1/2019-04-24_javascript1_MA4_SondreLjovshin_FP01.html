@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - MA04 - Question 1</title>
+
+<body>
+    <!-- Create a button that creates an alert when clicked -->
+    <ul>
+        <li>
+            <h3>Method 1. Calling a function in script.js with the onclick attribute</h3>
+            <button onclick="alertOnclick();">
+                Click Me
+            </button>
+        </li>
+        <li>
+            <h3>Method 2. Calling an alert without using the script.js at all. with the onclick attribute</h3>
+            <button onclick="alert('this is alert directly from the HTML');">
+                Click Me
+            </button>
+        </li>
+        <li>
+            <h3>Method 3. calling the alert without using the onclick attribute, but by adding an eventlistener to the
+                dom object.</h3>
+            <button id="button">
+                Click Me
+            </button>
+        </li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
