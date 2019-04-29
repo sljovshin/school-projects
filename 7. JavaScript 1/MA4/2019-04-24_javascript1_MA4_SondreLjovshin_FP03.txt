@@ -13,11 +13,14 @@ Briefly explain what the sources tab in Chromes Developers Tools does.
 It lists all sources the browser uses to display the website and it lets you inspect the sources aswell
 
 What is a JavaScript promise?
-
+A promise is an object that reprecents the eventual respone of an async task.
 
 What is an API?
 API is short for Application Programming Interface, its used to pass information in a controlled manner form a source to an application.
 
 What is a JavaScript Event?
+An event is somethings that happens that triggers an actions. An example is the click event, that can be used to trigger an action when a button is clicked.
 
 What is event bubbling?
+I had trouble finding out exactly what this is, but i have one example that i have experienced:
+If I set set an eventlistener to a parent div, the divs children will also tigger the event when clicked.
