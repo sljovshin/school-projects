@@ -11,8 +11,8 @@ fetch(url)
     return drawCards(data);
 })
 function drawCards(data) {
-    var card = "";
-    var newCards = document.getElementById('cards');
+    let card = "";
+    let newCards = document.getElementById('cards');
     for (let i = 0; i < data.cards.length; i++) {
         card += `<div class="col-sm-4">` +
                 `<div class="card-container">` +
@@ -26,54 +26,47 @@ function drawCards(data) {
         card += `<a href="card-specific.html?id=${data.cards[i].id}" class="btn btn-success">View More</a>` +
                 `</div>` +
                 `</div>`;
-        newCards.innerHTML += card;
     }
+    newCards.innerHTML += card;
 }
 
-var searchBT = document.getElementById('searchButton');
+let searchBT = document.getElementById('searchButton');
 searchBT.addEventListener('click', filterSearch);
 function filterSearch() {
     let searchword = document.getElementById('search').value;
-    var newCards = document.getElementById('cards');
+    let newCards = document.getElementById('cards');
         newCards.innerHTML = "";
+
     fetch(url)
     .then(function(resp) {
-        console.log("got result, converting to json");
         return resp.json();    
     })
     .then(function(data) {
-        console.log("Converted to json");
         return drawCards(data);
     })
     function drawCards(data) {
-        var card = "";
-        var result = [];
-        console.log(data);
-        
-
-/*
-        
-        for (let i = 0; i < data.cards.length; i++) { 
-            if (data.cards[i].name === searchword) {
-                console.log("found a match");
-                result.push(data.cards[i]);
-            }               
-        }        
-        for (let i = 0; i < result.length; i++) {
+        let filterResult = data.cards.filter(function (jsonCard) {
+          return jsonCard.name.toLowerCase().includes(searchword.toLowerCase());
+        });
+        if (filterResult.length === 0) {
+            newCards.innerHTML = `<h4> No card named \"${searchword}\", try something else </h4>`;
+        }
+        let card = "";
+        for (let i = 0; i < filterResult.length; i++) {
             card += `<div class="col-sm-4">` +
                     `<div class="card-container">` +
-                    `<h4>${result[i].name}</h4>`;
-            if (result[i].imageUrl == undefined){
+                    `<h4>${filterResult[i].name}</h4>`;
+            if (filterResult[i].imageUrl == undefined){
             card += `<img src="https://via.placeholder.com/223x310" width="100%">`;      
             } 
             else {
-            card += `<img src="${result[i].imageUrl}" width="100%">`;
+            card += `<img src="${filterResult[i].imageUrl}" width="100%">`;
             }
-            card += `<a href="card-specific.html?id=${result[i].id}" class="btn btn-success">View More</a>` +
+            card += `<a href="card-specific.html?id=${filterResult[i].id}" class="btn btn-success">View More</a>` +
                     `</div>` +
                     `</div>`;
-            newCards.innerHTML += card;
-        }*/
+        }
+        newCards.innerHTML += card;    
     }
 }
 
