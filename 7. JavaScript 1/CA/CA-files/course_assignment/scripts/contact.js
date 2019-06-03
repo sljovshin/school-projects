@@ -9,14 +9,14 @@ function validateForm(){
     let lastName = document.getElementById('lastName');
     let phone = document.getElementById('phone');
     let email = document.getElementById('email');
-    if (validator.firstName(firstName) === false) {
+    if (validator.name(firstName) === false) {
       document.getElementById('firstNameError').style.display = "block";
     }
     else {
       document.getElementById('firstNameError').style.display = "none";
     }
-
-    if (validator.lastName(lastName) === false) {
+    
+    if (validator.name(lastName) === false) {
       document.getElementById('lastNameError').style.display = "block";
     }
     else {
@@ -41,11 +41,8 @@ let validator = {
     namepattern  : /^[a-zA-ZWæøå]+$/,
     numpattern   : /^[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{3}\.[0-9]{3}\.[0-9]{4}|[0-9]{3} [0-9]{3} [0-9]{4}$/, 
     emailpattern : /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z-]{2,64}$/,
-    firstName : function (firstname) {
-      return firstNameResult = this.namepattern.test(firstname.value);
-    },
-    lastName : function (lastname) {
-      return lastNameResult = this.namepattern.test(lastname.value);
+    name : function (name) {
+      return nameResult = this.namepattern.test(name.value);
     },
     phoneNumber : function (number) {
       return numberResult = this.numpattern.test(number.value);
