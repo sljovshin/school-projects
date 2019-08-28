@@ -1,0 +1,67 @@
+:root {
+  background-color: #lightgrey;
+}
+
+body #audio-player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #audio-player button#playpause {
+  display: block;
+  height: 80px;
+  width: 80px;
+  border: 0;
+  background-color: #005dff;
+  color: white;
+  font-size: 30px;
+  border-radius: 100000px;
+}
+
+body #audio-player #seek-bar {
+  margin: 10px;
+  width: 400px;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100000px;
+  cursor: pointer;
+}
+
+body #audio-player #seek-bar #fill {
+  height: 10px;
+  background-color: #005dff;
+  border-radius: 100000px;
+}
+
+body #audio-player #seek-bar #handle {
+  width: 10px;
+  height: 10px;
+  background-color: #005dff;
+  border-radius: 100000px;
+  margin-left: -5px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+body #audio-player #seek-bar #handle:hover {
+  background-color: #337dff;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+
+body #audio-player #volumeBar {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+/*# sourceMappingURL=main.css.map */

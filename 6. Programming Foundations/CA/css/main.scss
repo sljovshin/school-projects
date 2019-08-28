@@ -1,0 +1,60 @@
+:root {
+    background-color: #lightgrey;
+}
+
+$blue: #005dff;
+
+body {
+    #audio-player {
+        display: flex;
+        align-items: center;
+        button#playpause {
+            display: block;
+            height: 80px;
+            width: 80px;
+            border: 0;
+            background-color: $blue;
+            color: white;
+            font-size: 30px;
+            border-radius: 100000px;
+        }
+
+        #seek-bar {
+            margin: 10px;
+            width: 400px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            border-radius: 100000px;
+            cursor: pointer;
+        
+
+            #fill {
+                height: 10px;
+                background-color: $blue;
+                border-radius: 100000px;
+
+            }
+
+            #handle {
+                width: 10px;
+                height: 10px;
+                background-color: $blue;
+                border-radius: 100000px;
+                margin-left: -5px;
+                transform: scale(2);
+                transition: all 0.1s;
+                
+                &:hover {
+                    background-color: lighten($blue, 10%);
+                    transform: scale(3)
+                }
+            }
+        }
+        #volumeBar {
+            transform: rotate(270deg)
+        }
+
+    }
+
+}

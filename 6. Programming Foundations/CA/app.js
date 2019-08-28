@@ -1,5 +1,4 @@
-/*  Control variables  */
-var skipLast = 1;
+/*var skipLast = 1;
 var playpause = 2;
 var skipNext = 3;
 var shuffle = 4;
@@ -10,14 +9,75 @@ var whatsPlaying = 8;
 var addFav = 9;
 var togglePL = 10;
 var desc = 11;
+let playing = false,
+    suffled = false,
+    repeatState = 1,
+    playlistToggled = false;
 /*  Golbal variables to add extra controls to the function */
-var playing = false;
-var suffled = false;
-var repeatState = 1;
-var playlistToggled = false;
 
 
-mediaPlayer(desc);
+
+
+
+let audio = new Audio('/tracks/glitch-flight-track.mp3')
+let seekBar = document.getElementById('seek-bar');
+let playButton = document.getElementById('playpause');
+let fillBar = document.getElementById('fill');
+
+audio.volume = 0.5;
+
+audio.addEventListener('play', () => {
+  playButton.src = "icons/pause.svg";
+});
+audio.addEventListener('pause', () => {
+  playButton.src = "icons/play.svg";
+});
+audio.addEventListener('timeupdate', () => {
+  let p = audio.currentTime / audio.duration;
+  fillBar.style.width = p * 100 + '%'
+});
+
+function volumeUpDown(val) {
+  audio.volume = val/1000;
+}
+
+
+
+
+let mouseDown = false;
+function clamp (min, val, max) {
+  return Math.min(Math.max(min, val), max)
+}
+
+function getP(e) {
+  let p = (e.clientX - seekBar.offsetLeft) / seekBar.clientWidth;
+  p = clamp(0, p, 1);
+  return p;
+}
+
+seekBar.addEventListener('mousedown', (e) => {
+  mouseDown = true;
+  let p = getP(e); 
+  fillBar.style.width = p * 100 + '%';
+});
+
+window.addEventListener('mousemove', (e) => {
+  if(!mouseDown) return;
+  let p = getP(e)
+  fillBar.style.width = p * 100 + '%';
+});
+
+window.addEventListener('mouseup', (e) => {
+  if(!mouseDown) return;
+
+  mouseDown = false;
+
+  let p = getP(e);
+
+  fillBar.style.width = p * 100 + '%'; 
+
+  audio.currentTime = p * audio.duration;
+});
 
 
 function  mediaPlayer(a) {
@@ -28,16 +88,16 @@ switch (a) {
     break;
 
   case 2:
-    //console.log(a);
-    if (playing == false) {
-      console.log("Playing song");
-      playing = true;
-    }
-    else {
-      console.log("Pausing song");
-      playing = false;
-    }
-    break;
+      if (audio.paused) {
+        audio.play();
+        
+        console.log("Playing song")
+      } else {
+        audio.pause();
+        
+        console.log("Pausing song");
+      }
+  break;
 
   case 3:
     //console.log(a);
