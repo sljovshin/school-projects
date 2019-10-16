@@ -4,76 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript">
+    /*  Control variables  */
+    var skipLast = "Last Song";
+    var playpause = "Play/Pause";
+    var skipNext = "Next Song"
 
-  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-  <link rel="stylesheet" href="css/main.css">
-  <title>Programming Foundations CA</title>
+    function whatButtonWasPressed(button){
+      console.log(button + " button was pressed");
+    }
+
+  </script>
+  <title>Document</title>
 </head>
 <body>
-    <div id="audio-player">
 
-      <img id="playpause" src="icons/play.svg" alt="play" onclick="mediaPlayer(2);">
-         
-          <div id="seek-bar">
-              <div id="fill"></div>
-              <div id="handle"></div>
-          </div>
-          <input id="volumeBar" type="range" min="0" max="1000" value="500" onchange="volumeUpDown(this.value);">
-    </div>
-<script src="app.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-         <!-- 
-           <button id="playpause" class="play" onclick="mediaPlayer(2);"></button> 
-          
-          <button class="play"><ion-icon name="skip-backward" onclick="alert('hello');"></ion-icon></button>
-    
-          <button class="play"><ion-icon name="skip-forward"></ion-icon></button>
-          
-          <button class="play"><ion-icon name="shuffle"></ion-icon></button>
-    
-          <button class="play"><ion-icon name="repeat"></ion-icon></button>
-    
-          <button class="play"><ion-icon name="volume-mute"></ion-icon></button>
-    
-          <button class="play"><ion-icon name="volume-low"></ion-icon></button>
-    
-          <button class="play"><ion-icon name="volume-high"></ion-icon></button>
-          
-          <button class="play"><ion-icon name="list"></ion-icon></button>
-    
-          <button class="play"><ion-icon name="heart-empty"></ion-icon></button>
-    
-          <button class="play"><ion-icon name="heart"></ion-icon></button>-->
-
-
-
-
-
-
-          <!--
-
-            Apocalypse by Serge Narcissoff | https://soundcloud.com/sergenarcissoff
-            Music promoted by https://www.free-stock-music.com
-            Creative Commons Attribution-ShareAlike 3.0 Unported
-            https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
-
-            Flight Track by Glitch | https://soundcloud.com/glitch
-            Music promoted by https://www.free-stock-music.com
-            Creative Commons Attribution 3.0 Unported License
-            https://creativecommons.org/licenses/by/3.0/deed.en_US
-
-
-            Drum&Bass Rock Pendulum Inspired Instrumental by Hyde - Free Instrumentals | https://soundcloud.com/davidhydemusic
-            Music promoted by https://www.free-stock-music.com
-            Creative Commons Attribution-ShareAlike 3.0 Unported
-            https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
-
-          -->
